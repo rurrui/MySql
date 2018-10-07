@@ -1,0 +1,1 @@
+1.打开mysql shell后,输入\conenct root@localhost:3306即可连接mysql服务
