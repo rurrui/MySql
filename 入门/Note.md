@@ -16,4 +16,9 @@ FROM CHINA
 WHERE POPULATION>5000000
 GROUP BY PROVINCE
 ```
-在这里我们说一下它的执行顺序，where过滤条件是最先执行的，其次才是GROUP BY分组
+在这里我们说一下它的执行顺序，where过滤条件是最先执行的，其次才是GROUP BY分组  
+## HAVING
+HAVING的使用场合：  
+当你需要使用GROUP BY后的某一列进行过滤操作的时候，你不能在WHERE中使用，因为WHERE总是在GROUP BY之前就进行过滤，这个时候就需要使用HAVING来利用GROUP BY后的过滤了  
+## 执行顺序
+WHERE>GROUP BY>HAVING
